@@ -1,1 +1,0 @@
-dev_brandon : "Greetings, My name is Brandon Kyle and I am the leader of the group".
