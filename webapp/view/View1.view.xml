@@ -24,8 +24,9 @@
                         </sap.ui.layout.form:FormElement>
                         <sap.ui.layout.form:FormElement label="Country" id="element0">
                             <sap.ui.layout.form:fields>
-                                <Select xmlns="sap.m" id="country_select">
+                                <Select xmlns="sap.m" id="country_select" selectedKey="">
                                     <items>
+                                        <core:Item xmlns:core="sap.ui.core" key=""      text="Select a Country" id="country_default"/>
                                         <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="England"     id="country_1"/>
                                         <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Germany"     id="country_2"/>
                                         <core:Item xmlns:core="sap.ui.core" key="item-key-3" text="USA"         id="country_3"/>
@@ -34,8 +35,6 @@
                                     
                                 </Select>
                             </sap.ui.layout.form:fields>
-                <Button xmlns="sap.m" text="Save"  id="button0"/>
-                <Button xmlns="sap.m" text="Clear" id="button1"/>    
                         </sap.ui.layout.form:FormElement>
                     </sap.ui.layout.form:formElements>
                 </sap.ui.layout.form:FormContainer>
@@ -43,6 +42,8 @@
             <sap.ui.layout.form:layout>
                 <sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
             </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
+                <Button xmlns="sap.m" text="Save"  id="button_save"/>
+                <Button xmlns="sap.m" text="Clear" id="button_clear" press="onClearPress"/>    
     </content>
     </Page>
 </mvc:View>
