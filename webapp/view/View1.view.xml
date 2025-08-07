@@ -1,6 +1,48 @@
-<mvc:View controllerName="sapui5exercise1.controller.View1"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="sapui5exercise1.controller.View1">
+    <Page id="page" title="Exercise 1: Survey Form">
+    <content>
+        <sap.ui.layout.form:Form editable="true" xmlns:sap.ui.layout.form="sap.ui.layout.form" id="form0">
+            <sap.ui.layout.form:formContainers>
+                <sap.ui.layout.form:FormContainer id="container2">
+                    <sap.ui.layout.form:formElements>
+                        <sap.ui.layout.form:FormElement label="Name" id="element1">
+                            <sap.ui.layout.form:fields>
+                                <Input xmlns="sap.m" width="100%" id="user_name"/>
+                            </sap.ui.layout.form:fields>
+                        </sap.ui.layout.form:FormElement>
+                        <sap.ui.layout.form:FormElement label="Street/No" id="element3">
+                            <sap.ui.layout.form:fields>
+                                <Input xmlns="sap.m" width="100%" id="user_street"/>
+                                <Input xmlns="sap.m" width="100%" id="user_no"/>
+                            </sap.ui.layout.form:fields>
+                        </sap.ui.layout.form:FormElement>
+                        <sap.ui.layout.form:FormElement label="ZIP Code/City" id="element4">
+                            <sap.ui.layout.form:fields>
+                                <Input xmlns="sap.m" width="100%" id="user_zip_code"/>
+                                <Input xmlns="sap.m" width="100%" id="user_city"/>
+                            </sap.ui.layout.form:fields>
+                        </sap.ui.layout.form:FormElement>
+                        <sap.ui.layout.form:FormElement label="Country" id="element0">
+                            <sap.ui.layout.form:fields>
+                                <Select xmlns="sap.m" id="country_select">
+                                    <items>
+                                        <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="England"     id="country_1"/>
+                                        <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Germany"     id="country_2"/>
+                                        <core:Item xmlns:core="sap.ui.core" key="item-key-3" text="USA"         id="country_3"/>
+                                        <core:Item xmlns:core="sap.ui.core" key="item-key-4" text="Philippines" id="country_4"/>
+                                        </items>
+                                    
+                                </Select>
+                            </sap.ui.layout.form:fields>
+                <Button xmlns="sap.m" text="Save"  id="button0"/>
+                <Button xmlns="sap.m" text="Clear" id="button1"/>    
+                        </sap.ui.layout.form:FormElement>
+                    </sap.ui.layout.form:formElements>
+                </sap.ui.layout.form:FormContainer>
+            </sap.ui.layout.form:formContainers>
+            <sap.ui.layout.form:layout>
+                <sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+            </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
+    </content>
     </Page>
 </mvc:View>
