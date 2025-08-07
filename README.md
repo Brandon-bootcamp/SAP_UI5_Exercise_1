@@ -18,23 +18,4 @@
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
 
-## project1
-
-An SAP Fiori application.
-
-### Starting the generated app
-
--   This app has been generated using the SAP Fiori tools - App Generator, as part of the SAP Fiori tools suite.  To launch the generated application, run the following from the generated application root folder:
-
-```
-    npm start
-```
-
-#### Pre-requisites:
-
-1. Active NodeJS LTS (Long Term Support) version and associated supported NPM version.  (See https://nodejs.org)
-
-
-=======
 # SAP_FIORI_FY25_CAPABILITY_TRAINING_GROUP5
->>>>>>> 7091e6952e4c20449fffd369d88fd9470858fb49
